@@ -1,0 +1,63 @@
+{
+  "name": "TabSpacer",
+  "displayName": "TabSpacer",
+  "description": "Convert tabs to spaces when you call tabspacer.",
+  "author": "Yuichi Nukiyama",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YuichiNukiyama/TabSpacer.git"
+  },
+  "keywords": [
+    "tab",
+    "space",
+    "Visual Studio",
+    "Visual Studio Code",
+    "VS Code",
+    "extension"
+  ],
+  "version": "0.5.0",
+  "publisher": "YuichiNukiyama",
+  "engines": {
+    "vscode": "^0.10.1"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.tabSpacer",
+        "title": "convert tabs to space",
+        "description": "Number of spaces is 4."
+      },
+      {
+        "command": "extension.toggleTabSpace",
+        "title": "toggle insertSpaces option",
+        "description": "tabsize option sets 4."
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.tabSpacer",
+        "key": "ctrl+shift+t"
+      },
+      {
+        "command": "extension.toggleTabSpace",
+        "key": "ctrl+shift+z"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+    "compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^1.6.2",
+    "vscode": "0.10.x"
+  }
+}
