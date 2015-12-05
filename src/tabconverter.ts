@@ -4,12 +4,13 @@ import {window, Selection, Position} from 'vscode';
  * TabConverter Class
  */
 export default class TabConverter {
-
+    
     /**
-     * convert tabs to 4 spaces
+     * convert tabs to spaces
      */
     public convertTabToSpace() {
         let editor = window.activeTextEditor,
+            options = editor.options,
             document = editor.document,
             startPos = new Position(0, 0),
             endPos = new Position(document.lineCount - 1, 10000),
@@ -18,8 +19,15 @@ export default class TabConverter {
             newText = '';
 
         editor.edit(edit => {
-            // replace all tabs to space
-            newText = text.replace(/\t/g, '\x20\x20\x20\x20');
+            
+            // create spaces as same as number of tabSize
+            let replaceValue = '';
+            for (let i = 0; i  < options.tabSize ; i++) {
+                replaceValue += " ";
+            }
+            
+            // replace all tabs to spaces
+            newText = text.replace(/\t/g, replaceValue);
             edit.replace(selection, newText);
             editor.selections = [selection];
         }).then(bool=> {
@@ -35,11 +43,11 @@ export default class TabConverter {
      *  toggle insertSpaces option 
      */
     public toggleTabSpace() {
-        // The code you place here will be executed every time your command is executed
-        if (window.activeTextEditor.options.insertSpaces) {
-            window.activeTextEditor.options = { tabSize: 4, insertSpaces: false };
+        let options = window.activeTextEditor.options;
+        if (options.insertSpaces) {
+            window.activeTextEditor.options = { tabSize: options.tabSize, insertSpaces: false };
         } else {
-            window.activeTextEditor.options = { tabSize: 4, insertSpaces: true };
+            window.activeTextEditor.options = { tabSize: options.tabSize, insertSpaces: true };
         }
     }
 }

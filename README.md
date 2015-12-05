@@ -5,6 +5,13 @@ TabSpacer is extension for Visual Studio Code(VS Code).
 TabSpacer have 2 features which toggle insertSpaces option and convert existing tabs convert to spaces.
 
 ## Usage
+**toggle insertSpaces option** command toggle insertSpaces option.
+if insertSpaces was true, this method converted value to false. 
+And insertSpaces which is false is converted true.tabSize isn't unaffected.
+
+**convert tabs to space** command convert all tabs to spaces.
+tabsize is as same as your settings.
+
 toggle insertSpaces option.
 ```
 press F1 key and input [toggle insertSpaces option]  
@@ -19,7 +26,7 @@ shortcut key [ctrl+shift+t]
 ```
 
 ## Install
-You need to copy it to a new folder under your local extensions folder.
+You need to copy it to your local extensions folder.
 ``` Windows
 %USERPROFILE%\.vscode\extensions
 ```
