@@ -2,7 +2,7 @@
   "name": "TabSpacer",
   "displayName": "TabSpacer",
   "description": "Convert tabs to spaces when you call tabspacer.",
-  "author": "Yuichi Nukiyama",
+  "author": "YuichiNukiyama",
   "license": "MIT",
   "repository": {
     "type": "git",
