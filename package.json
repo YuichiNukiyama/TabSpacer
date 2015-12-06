@@ -19,7 +19,7 @@
     "VS Code",
     "extension"
   ],
-  "version": "0.5.1",
+  "version": "0.5.2",
   "publisher": "yuichinukiyama",
   "engines": {
     "vscode": "^0.10.1"
