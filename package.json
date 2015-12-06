@@ -4,6 +4,9 @@
   "description": "Convert tabs to spaces when you call tabspacer.",
   "author": "YuichiNukiyama",
   "license": "MIT",
+  "bugs": {
+        "url": "https://github.com/YuichiNukiyama/TabSpacer/issues"
+    },
   "repository": {
     "type": "git",
     "url": "https://github.com/YuichiNukiyama/TabSpacer.git"
@@ -16,7 +19,7 @@
     "VS Code",
     "extension"
   ],
-  "version": "0.5.0",
+  "version": "0.5.1",
   "publisher": "YuichiNukiyama",
   "engines": {
     "vscode": "^0.10.1"
