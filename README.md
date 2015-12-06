@@ -26,7 +26,8 @@ shortcut key [ctrl+shift+t]
 ```
 
 ## Install
-You need to copy it to your local extensions folder.
+Press [F1] key and type [Extensions: Install Extension].And input [TabSpacer].
+Or you copy this files to your local extensions folder.
 ``` Windows
 %USERPROFILE%\.vscode\extensions
 ```
