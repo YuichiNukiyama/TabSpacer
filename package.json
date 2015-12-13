@@ -11,6 +11,7 @@
     "type": "git",
     "url": "https://github.com/YuichiNukiyama/TabSpacer.git"
   },
+  "homepage": "https://marketplace.visualstudio.com/items/yuichinukiyama.TabSpacer",
   "keywords": [
     "tab",
     "space",
@@ -19,7 +20,8 @@
     "VS Code",
     "extension"
   ],
-  "version": "0.5.2",
+  "version": "0.5.3",
+  "icon": "icon.png",
   "publisher": "yuichinukiyama",
   "engines": {
     "vscode": "^0.10.1"

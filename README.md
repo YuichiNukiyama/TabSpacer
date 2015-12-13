@@ -3,6 +3,7 @@
 ## Description
 TabSpacer is extension for Visual Studio Code(VS Code).
 TabSpacer have 2 features which toggle insertSpaces option and convert existing tabs convert to spaces.
+This extension is registered [Visual Studio Marketplace](https://marketplace.visualstudio.com/items/yuichinukiyama.TabSpacer).
 
 ## Usage
 **toggle insertSpaces option** command toggle insertSpaces option.
