@@ -13,7 +13,7 @@ export default class TabConverter {
             options = editor.options,
             document = editor.document,
             startPos = new Position(0, 0),
-            endPos = new Position(document.lineCount - 1, 10000),
+            endPos = new Position(document.lineCount - 1, document.lineAt(document.lineCount - 1).text.length),
             selection = new Selection(startPos, endPos),
             text = document.getText(),
             newText = '';

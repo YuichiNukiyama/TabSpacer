@@ -20,7 +20,7 @@
     "VS Code",
     "extension"
   ],
-  "version": "0.5.3",
+  "version": "0.6.0",
   "icon": "icon.png",
   "publisher": "yuichinukiyama",
   "engines": {
