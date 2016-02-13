@@ -1,5 +1,16 @@
 # TabSpacer
 
+## Changelog
+**Version 1**
+TabSpacer have been implemented new feature.
+Now, TabSpaver can convert spaces which is same number of insertSpace options to tabs.
+The method to call this feature is following:
+```
+press F1 key and input [convert spaces to tab]  
+or  
+shortcut key [ctrl+shift+s] 
+```
+
 ## Description
 TabSpacer is extension for Visual Studio Code(VS Code).
 TabSpacer have 2 features which toggle insertSpaces option and convert existing tabs convert to spaces.

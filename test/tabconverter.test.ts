@@ -42,6 +42,43 @@ suite("Tabconverter.convertTabToSpace Tests", () => {
 	});
 });
 
+suite("Tabconverter.convertSpaceToTab Tests", () => {
+
+	// Defines a Mocha unit test
+	test("convertSpaceToTab", () => {
+		// Arrange
+		let editor = window.activeTextEditor,
+			selection = editor.selections,
+			tabconverter = new TabConverter(),
+			startPos = new Position(0, 0),
+            endPos = new Position(0, 1),
+            tabSize = window.activeTextEditor.options.tabSize,
+            spaces = "";
+
+		editor.edit(edit => {
+            for (let i = 0; i  < tabSize ; i++) {
+                spaces += " ";
+            }
+			edit.insert(startPos, spaces);
+			editor.selection = new Selection(startPos, endPos);
+			console.log(editor.document.getText().match(spaces));
+		}).then(bool => {
+			// Act
+			tabconverter.convertSpaceToTab();
+			
+			// this test isn't beautifull. Becouse this is Environment-dependent.
+			// I don't have good idea now
+			setTimeout(function() {
+				// Assert
+				let text = editor.document.getText();
+				let regSpaces = new RegExp(spaces, "g");
+				assert.equal(text.search(regSpaces), -1);
+			}, 1000);
+
+		});
+	});
+});
+
 suite("Tabconverter.toggleTabSpace Tests", () => {
 
 	// Defines a Mocha unit test

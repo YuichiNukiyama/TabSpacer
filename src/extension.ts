@@ -28,7 +28,14 @@ export function activate(context: ExtensionContext) {
         tabConverter.toggleTabSpace();
         window.showInformationMessage('insertSpaces option is changed!');
     });
+    
+    var disposable3 = commands.registerCommand('extension.convertSpacesToTab', () => {
+        let tabConverter = new TabConverter();
+        tabConverter.convertSpaceToTab();
+        window.showInformationMessage('Spaces which is the same number of insertSpaces option had been converted to tabs!');
+    });
 
     context.subscriptions.push(disposable);
     context.subscriptions.push(disposable2);
+    context.subscriptions.push(disposable3);
 }

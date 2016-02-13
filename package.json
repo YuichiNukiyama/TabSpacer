@@ -20,7 +20,7 @@
     "VS Code",
     "extension"
   ],
-  "version": "0.6.0",
+  "version": "1.0.0",
   "icon": "icon.png",
   "publisher": "yuichinukiyama",
   "engines": {
@@ -38,12 +38,17 @@
       {
         "command": "extension.tabSpacer",
         "title": "convert tabs to space",
-        "description": "Number of spaces is 4."
+        "description": "Number of spaces is as same as insertSpaces option."
       },
       {
         "command": "extension.toggleTabSpace",
         "title": "toggle insertSpaces option",
-        "description": "tabsize option sets 4."
+        "description": "tabsize option sets as same number as insertSpaces."
+      },
+      {
+        "command": "extension.convertSpacesToTab",
+        "title": "convert spaces to tab",
+        "description": "convert spaces which is same number of insertSpaces convert tabs."
       }
     ],
     "keybindings": [
@@ -54,6 +59,10 @@
       {
         "command": "extension.toggleTabSpace",
         "key": "ctrl+shift+z"
+      },
+      {
+        "command": "extension.convertSpacesToTab",
+        "key": "ctrl+shift+s"
       }
     ]
   },
