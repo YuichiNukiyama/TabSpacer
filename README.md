@@ -32,6 +32,8 @@ You can also copy its files into your local extensions folder:
 
 ## Changelog
 ### Version 1.0.1
+The extension no more displays `Congratulations, your extension "TabConverter" is now active!` when activated.
+
 ### Version 1.0.0
 TabSpacer can now convert spaces to tabs by respecting the `insertSpace` VS Code option.  
 You can use this feature by either pressing the `F1` key and typing `convert spaces to tab`, or using the `Ctrl+Shift+S` key binding.
