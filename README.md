@@ -1,51 +1,39 @@
 # TabSpacer
-
-## Changelog
-**Version 1**
-TabSpacer have been implemented new feature.
-Now, TabSpaver can convert spaces which is same number of insertSpace options to tabs.
-The method to call this feature is following:
-```
-press F1 key and input [convert spaces to tab]  
-or  
-shortcut key [ctrl+shift+s] 
-```
-
 ## Description
-TabSpacer is extension for Visual Studio Code(VS Code).
-TabSpacer have 2 features which toggle insertSpaces option and convert existing tabs convert to spaces.
-This extension is registered [Visual Studio Marketplace](https://marketplace.visualstudio.com/items/yuichinukiyama.TabSpacer).
+TabSpacer is an extension for [Visual Studio Code (VS Code)](https://code.visualstudio.com/).
+
+It have 2 features, **toggle the `insertSpaces` option** and **convert existing tabs to spaces**.
+
+The extension is registered on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items/yuichinukiyama.TabSpacer).
 
 ## Usage
-**toggle insertSpaces option** command toggle insertSpaces option.
-if insertSpaces was true, this method converted value to false. 
-And insertSpaces which is false is converted true.tabSize isn't unaffected.
+## Toggle insertSpaces option
+Press the `F1` key and type `toggle insertSpaces option` or use the `Ctrl+Shift+Z` key binding.
 
-**convert tabs to space** command convert all tabs to spaces.
-tabsize is as same as your settings.
+This command toggles the insertSpaces option:
+* If `insertSpaces` is `true`, then its value is set to `false`.
+* If `insertSpaces` is `false`, then its value is set to `false`.
 
-toggle insertSpaces option.
-```
-press F1 key and input [toggle insertSpaces option]  
-or  
-shortcut key [ctrl+shift+z] 
-```
-convert tabs to spaces.
-```
-press F1 key and input [convert tabs to space]  
-or  
-shortcut key [ctrl+shift+t] 
-```
+> **Note:** The `tabSize` option is unaffected.
+
+## Convert tabs to space
+Press the `F1` key and type `convert tabs to space` or use the `Ctrl+Shift+T` key binding.
+
+This command convert all tabs to spaces.
+
+Actual tab size is read from the `tabSize` VS Code option.
 
 ## Install
-Press [F1] key and type [Extensions: Install Extension].And input [TabSpacer].
-Or you copy this files to your local extensions folder.
-``` Windows
-%USERPROFILE%\.vscode\extensions
-```
-``` Mac
-$HOME/.vscode/extensions
-```
+Press `Ctrl+P` and type `ext install TabSpacer`.
 
-## Lisence
-[MIT](./LICENSE)
+You can also copy its files into your local extensions folder:
+* **Windows**: `%USERPROFILE%\.vscode\extensions`
+* **Linux or Mac**: `$HOME/.vscode/extensions`
+
+## Changelog
+### Version 1
+TabSpacer can now convert spaces to tabs by respecting the `insertSpace` VS Code option.  
+You can use this feature by either pressing the `F1` key and typing `convert spaces to tab`, or using the `Ctrl+Shift+S` key binding.
+
+## License
+[MIT](LICENSE)
