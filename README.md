@@ -12,7 +12,7 @@ Press the `F1` key and type `toggle insertSpaces option` or use the `Ctrl+Shift+
 
 This command toggles the insertSpaces option:
 * If `insertSpaces` is `true`, then its value is set to `false`.
-* If `insertSpaces` is `false`, then its value is set to `false`.
+* If `insertSpaces` is `false`, then its value is set to `true`.
 
 > **Note:** The `tabSize` option is unaffected.
 
