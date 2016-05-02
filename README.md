@@ -1,4 +1,9 @@
 # TabSpacer
+
+## Note
+VS Code have option to convert tabs to spaces by default in 0.10.10 (see [official docs](https://code.visualstudio.com/updates/vFebruary#_editor)).
+So, this extention is not much help.
+
 ## Description
 TabSpacer is an extension for [Visual Studio Code (VS Code)](https://code.visualstudio.com/).
 
@@ -31,6 +36,9 @@ You can also copy its files into your local extensions folder:
 * **Linux or Mac**: `$HOME/.vscode/extensions`
 
 ## Changelog
+### Version 1.0.2
+Change README.
+
 ### Version 1.0.1
 The extension no more displays `Congratulations, your extension "TabConverter" is now active!` when activated.
 
